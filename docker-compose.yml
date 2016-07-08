@@ -1,6 +1,6 @@
 
 zookeeper:
-    image: cloudmode/zookeeper
+    image: vescel/zookeeper
     env_file: _env
     ports:
       - 2181
@@ -9,7 +9,7 @@ zookeeper:
     
 
 kafka:
-    image: cloudmode/kafka
+    image: vescel/kafka
     env_file: _env
     ports:
       - 9092
@@ -18,7 +18,7 @@ kafka:
     
 
 kafka-manager:
-  image: cloudmode/kafka-manager
+  image: vescel/kafka-manager
   ports:
     - "9000:9000"
   env_file: _env
