@@ -1,0 +1,29 @@
+
+zookeeper:
+    image: cloudmode/zookeeper
+    env_file: _env
+    ports:
+      - 2181
+      - 2888
+      - 3888
+    
+
+kafka:
+    image: cloudmode/kafka
+    env_file: _env
+    ports:
+      - 9092
+    links:
+      - zookeeper
+    
+
+kafka-manager:
+  image: cloudmode/kafka-manager
+  ports:
+    - "9000:9000"
+  env_file: _env
+  environment:
+    APPLICATION_SECRET: letmein
+  links:
+    - zookeeper
+    - kafka
