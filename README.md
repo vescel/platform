@@ -1,6 +1,8 @@
 # vescel/platform: dockerized kafka for Joyent Triton
 vescel/platform is a dockerized [apache kafka](http://kafka.apache.org/) installation for the [Joyent Triton Containers as a Service](https://www.joyent.com/triton) platform that makes use of [Joyent's ContainerPilot](https://www.joyent.com/containerpilot) for container scheduling.
 
+### the vescel/platform use the following docker images: [vescel/zookeeper](https://github.com/vescel/zookeeper), [vescel/kafka](https://github.com/vescel/kafka), [vescel/kafka-manager](https://github.com/vescel/kafka-manager), all of which have automated builds available on [dockerhub](https//hub.docker.com/r/vescel)
+
 ## How-to
 ### local machine prerequsites
 #### Mac OSX
