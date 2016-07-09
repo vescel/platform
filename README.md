@@ -37,6 +37,7 @@ Scaling to a multiple node installation is accomplished with the following comma
 
 ```
 docker-compose scale zookeeper=3 kafka=3
+```
 
 ### Joyent/Triton Quick Start
 
